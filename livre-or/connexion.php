@@ -1,5 +1,6 @@
 <?php require "serveur.php";
 session_start();
+echo $_SESSION['login'];
 
 if(isset($_POST['envoi'])){
     $login = htmlspecialchars($_POST['login']);
@@ -11,7 +12,7 @@ if(isset($_POST['envoi'])){
     if ($password == $_POST['password']) {
    
         echo "connecté";
-        session_start();
+        
         $_SESSION['login'] = $login;
             header('Location: profil.php');
         }
