@@ -1,17 +1,17 @@
+<?php include "header.php" ?>
 <?php
 include('serveur.php');
 
 echo "<br>";
-session_start();
-$tab= mysqli_query($bdd,"SELECT * FROM utilisateurs ");
-$req=mysqli_fetch_all($tab,MYSQLI_ASSOC);
-$id_user=intval($req[0]['id']);
+#$tab= mysqli_query($bdd,"SELECT * FROM utilisateurs ");
+#$req=mysqli_fetch_all($tab,MYSQLI_ASSOC);
+#$id_user=intval($req[0]['id']);
 
-echo $_SESSION['login'];
+echo "Connecté(e) en tant que " . $_SESSION['login'];
 
 echo "<br>";
 
-var_dump($id_user);
+#var_dump($id_user);
 
 
 
@@ -54,6 +54,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="style.css">
     <title>Livre d'or</title>
 </head>
+
 <body>
     
 <?php if(isset($_SESSION['login'])){ ?>
@@ -95,7 +96,7 @@ if(isset($_POST['submit'])){
 
         
 
-      
+    
       
 
     ?>

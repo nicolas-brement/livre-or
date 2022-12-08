@@ -1,0 +1,96 @@
+@import url(https://fonts.google.com/specimen/Bebas+Neue);
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgb(226,174,61);
+    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 25%;
+    background: rgb(226,174,61);
+    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+}
+
+body {
+    width: 100%;
+    background: url("image/zenitsu.jpeg") fixed no-repeat;
+    background-size: cover;
+}
+
+nav {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(55 37 128);
+}
+
+#github {
+    width: 45px;
+}
+
+.connexion {
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 170px;
+    background: whitesmoke;
+    border-radius: 15px;
+    opacity: 85%;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.message_connexion {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 60px;
+    font-size: larger;
+}

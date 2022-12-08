@@ -1,6 +1,6 @@
+<?php include "header.php" ?>
+
 <?php require "serveur.php";
-session_start();
-echo $_SESSION['login'];
 
 if(isset($_POST['envoi'])){
     $login = htmlspecialchars($_POST['login']);
@@ -31,18 +31,23 @@ if(isset($_POST['envoi'])){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatinble" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style_connexion.css">
+    <link rel="stylesheet" href="css/style_connexion.css">
     <title>Connexion</title>
 </head>
 
-<header>
-<div class="connexion"><h2><strong>Connexion</strong></h2></div>
-        <br>
-</header>
-
 <body>
 
+    <div class="message_connexion">
+
+    <?php
+    if (isset($_SESSION['login']))
+    { echo "Connecté(e) en tant que " . $_SESSION['login']; } 
+    ?>
+    </div>
+
     <form method="POST" action="">
+        <div class="connexion"><h2><strong>Connexion</strong></h2></div>
+        <br>
 
         <label for="pseudo" name="login" class="form-label">Pseudo:</label>
       
@@ -57,8 +62,6 @@ if(isset($_POST['envoi'])){
 </body>
 
 <footer>
-    <a href="index.php" class="btn">
-                <div class="arrow"></div>
-                <h6>Retour à l'accueil</h6></a>
+    <a href="https://github.com/nicolas-brement?tab=repositories"><img id="github" src="css/image/git.png"></a>
 </footer>
 </html>
