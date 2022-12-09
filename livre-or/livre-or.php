@@ -30,22 +30,21 @@ include('serveur.php');
 <section class="container_formulaire">
     <h1>Livre d'or</h1>
 
-
-
-    <div class="livre_or">
+   <!-- <div class="livre_or"> -->
 
         <?php
         foreach ($row as $row){
-            echo "<div class='result'>";
+            echo "<table>";
+            echo "<td"."<div class='result'>";
             echo "<div id='info'>";
-            echo "Posté le " . $row["date"] . "." . " Par " . $row["login"];
+            echo "<h2>"."Posté le " . $row["date"] . "." . " Par " . $row["login"].":" . "</h2>";
             echo "</div>";
             echo "<div id='com'>";
-            echo "<br>" . $row['commentaire'];
-            echo "</div>";
-            if(@$_SESSION['login'] == $row['login']){
-                echo "<form method='POST'><button type='submit' name='delete' value=".$row['id'].">Supprimer</button></form>"; // Mehdi Romdhani - Thank you !
-            }
+            echo $row['commentaire']."</td>";
+            echo "</div></table>";
+           // if(@$_SESSION['login'] == $row['login']){
+               // echo "<form method='POST'><button type='submit' name='delete' value=".$row['id'].">Supprimer</button></form>"; // Mehdi Romdhani - Thank you !
+          //  }
             echo "</div>";
         }
         ?>
@@ -57,7 +56,7 @@ include('serveur.php');
             echo "</div>";
         }
         ?>
-    </div>
+   <!-- </div> -->
 
 </section>
 

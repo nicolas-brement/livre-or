@@ -30,7 +30,7 @@ footer {
 
 body {
     width: 100%;
-    background: url("image/zenitsu.jpeg") fixed no-repeat;
+    background: url("image/Kimetsu.jpeg") fixed no-repeat;
     background-size: cover;
 }
 
@@ -56,6 +56,53 @@ a {
     color: rgb(55 37 128);
 }
 
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: small;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
 .livre_or {
-    background: white;
+    display: flex;
+    background: gray;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container_formulaire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info {
+    margin-bottom: 10px;
+}
+
+#com {
+    margin-bottom: 20px;
+}
+
+
+td, .result{
+    background-color: gray;
+    margin-top: 20px;
+    max-width: 100%;
+    min-width: 50%;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
 }
