@@ -26,16 +26,17 @@ if (!empty($_POST["login"]) && !empty($_POST["mdp"]) && !empty($_POST["confmdp"]
         <meta charset="utf-8>
         <meta http-equiv="X-UA-Compatinble" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style_inscription.css">
+        <link rel="stylesheet" href="css/style_inscription.css">
         <title>Inscription</title>
 </head>
 
-<header>
-<div class="inscription"><h2><strong>Inscription</strong></h2></div>
-</header>
+<?php include "header.php" ?>
 
 <body>
         <form method="POST">
+        <div class="inscription"><h2><strong>Inscription</strong></h2></div>
+        <br>
+
             <label for="Votre pseudo" class="form-label">Pseudo:</label>
 
             <input type="text" placeholder="Login" name="login" value="" required>
@@ -46,15 +47,13 @@ if (!empty($_POST["login"]) && !empty($_POST["mdp"]) && !empty($_POST["confmdp"]
             <br>
             <label for="Confirmer le mot de passe" class="form-label">Confirmer le mot de passe:</label>
 
-            <input type="password" placeholder="Confirmer le mot de passe" name="confmdp" required>
+            <input type="password" placeholder="Confirmer le mdp" name="confmdp" required>
             <br>
-            <button type="submit" name="Envoyer">Envoyer</button>
+            <input type="submit" name="envoi">
             </form>
      </body>
 
-<footer>
-            <a href="index.php" class="btn">
-                <div class="arrow"></div>
-                <h6>Retour à l'accueil</h6></a>
+     <footer>
+    <a href="https://github.com/nicolas-brement?tab=repositories"><img id="github" src="css/image/git.png"></a>
 </footer>
 </html>

@@ -51,11 +51,11 @@ if(isset($_POST['envoi'])){
 
         <label for="pseudo" name="login" class="form-label">Pseudo:</label>
       
-        <input type="text" name="login">
+        <input type="text" placeholder="Login" name="login">
         <br>
         <label for="password" name="password" class="form-label">Password:</label>
    
-        <input type="password" name="password">
+        <input type="password" placeholder="Mdp" name="password">
         <br>
         <input type="submit" name="envoi">
     </form>

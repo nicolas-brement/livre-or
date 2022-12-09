@@ -14,8 +14,8 @@ header{
     height: 70px;
     width: 100%;
     margin-bottom: 10px;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+    background: rgb(110,188,208);
+    background: linear-gradient(90deg, rgba(110,188,208,0.6447172619047619) 0%, rgba(255,255,255,0.6083026960784313) 50%, rgba(199,199,182,0.594297093837535) 100%);
 }
 
 footer {
@@ -23,14 +23,14 @@ footer {
     justify-content: center;
     height: 50px;
     width: 100%;
-    margin-top: 25%;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+    margin-top: 20%;
+    background: rgb(110,188,208);
+    background: linear-gradient(90deg, rgba(110,188,208,0.6447172619047619) 0%, rgba(255,255,255,0.6083026960784313) 50%, rgba(199,199,182,0.594297093837535) 100%);
 }
 
 body {
     width: 100%;
-    background: url("image/zenitsu.jpeg") fixed no-repeat;
+    background: url("image/inosuke2.jpeg") fixed no-repeat;
     background-size: cover;
 }
 
@@ -60,10 +60,6 @@ a {
     width: 45px;
 }
 
-.connexion {
-    margin-top: 10px;
-}
-
 form {
     display: flex;
     align-items: center;
@@ -73,8 +69,8 @@ form {
     flex-direction: column;
     margin-left: 35%;
     margin-top: 170px;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.7816668417366946) 0%, rgba(255,255,255,0.7802634803921569) 50%, rgba(251,252,69,0.7802634803921569) 100%);
+    background: rgb(110,188,208);
+    background: linear-gradient(90deg, rgba(110,188,208,0.8800113795518207) 0%, rgba(255,255,255,0.8744091386554622) 50%, rgba(199,199,182,0.8772102591036415) 100%);
     border-radius: 15px;
 }
 
@@ -89,8 +85,8 @@ input {
 }
 
 input:hover {
-    background: rgb(231,182,58);
-    background: linear-gradient(90deg, rgba(231,182,58,0.8800113795518207) 0%, rgba(255,255,255,1) 50%, rgba(231,182,58,1) 100%);
+    background: rgb(152,196,224);
+    background: linear-gradient(90deg, rgba(152,196,224,1) 0%, rgba(255,255,255,1) 50%, rgba(152,196,224,1) 100%);
 }
 
 .message_connexion {
@@ -102,3 +98,14 @@ input:hover {
     font-size: larger;
 }
 
+.inscription {
+    margin-top: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 30%;
+}
