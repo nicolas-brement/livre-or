@@ -14,8 +14,8 @@ header{
     height: 70px;
     width: 100%;
     margin-bottom: 10px;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+    background: rgb(194,187,187);
+background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
 }
 
 footer {
@@ -24,13 +24,13 @@ footer {
     height: 50px;
     width: 100%;
     margin-top: 25%;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+    background: rgb(194,187,187);
+background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
 }
 
 body {
     width: 100%;
-    background: url("image/Kimetsu.jpeg") fixed no-repeat;
+    background: url("image/Uzui.jpeg") fixed no-repeat;
     background-size: cover;
 }
 
@@ -94,8 +94,9 @@ h2 {
 }
 
 
-td, .result{
-    background-color: gray;
+td, .result {
+    background: rgb(194,187,187);
+    background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
     margin-top: 20px;
     max-width: 100%;
     min-width: 50%;
@@ -103,6 +104,16 @@ td, .result{
     border-radius: 10px;
 }
 
+td:hover, .result:hover {
+    background: rgb(166,34,34);
+background: linear-gradient(90deg, rgba(166,34,34,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
+}
+
+
 button {
     margin-top: 20px;
+}
+
+#github {
+    width: 45px;
 }

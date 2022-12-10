@@ -60,4 +60,8 @@ include('serveur.php');
 
 </section>
 
+<footer>
+    <a href="https://github.com/nicolas-brement?tab=repositories"><img id="github" src="css/image/git.png"></a>
+</footer>
+
 
