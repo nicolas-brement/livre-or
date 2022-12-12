@@ -28,7 +28,7 @@ include('serveur.php');
 ?>
 
 <section class="container_formulaire">
-    <h1>Livre d'or</h1>
+    <h3>LIVRE D'OR</h3>
 
    <!-- <div class="livre_or"> -->
 
@@ -50,6 +50,9 @@ include('serveur.php');
         ?>
         <?php if(empty($_SESSION['login'])){
             echo "<p>Connectez-vous pour laisser un commentaire</p>";
+            echo "<div id='butt'>";
+            echo "<a href='connexion.php'><button class='modifier' id='button_com' type='submit' name='submit'>Se connecter</button></a>";
+            echo "</div>";
         }else{
             echo "<div id='butt'>";
             echo "<a href='commentaire.php'><button class='modifier' id='button_com' type='submit' name='submit'>Écrire un commentaire</button></a>";

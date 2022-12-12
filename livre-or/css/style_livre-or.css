@@ -15,7 +15,7 @@ header{
     width: 100%;
     margin-bottom: 10px;
     background: rgb(194,187,187);
-background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
+    background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
 }
 
 footer {
@@ -23,9 +23,9 @@ footer {
     justify-content: center;
     height: 50px;
     width: 100%;
-    margin-top: 25%;
+    margin-top: 10%;
     background: rgb(194,187,187);
-background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
+    background: linear-gradient(90deg, rgba(194,187,187,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
 }
 
 body {
@@ -106,7 +106,7 @@ td, .result {
 
 td:hover, .result:hover {
     background: rgb(166,34,34);
-background: linear-gradient(90deg, rgba(166,34,34,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
+    background: linear-gradient(90deg, rgba(166,34,34,1) 0%, rgba(255,255,255,0.7161458333333333) 50%, rgba(194,187,187,0.6545211834733893) 100%);
 }
 
 
@@ -116,4 +116,37 @@ button {
 
 #github {
     width: 45px;
+}
+
+#butt {
+    margin-top: 10px;
+}
+
+#button_com {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#button_com:hover {
+    -webkit-transform:scale(1.10);
+    transform:scale(1.10);
+}
+
+p {
+    color: white;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: x-large;
+    color: rgb(233, 190, 17);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(110, 110, 110);
 }

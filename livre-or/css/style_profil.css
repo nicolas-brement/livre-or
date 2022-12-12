@@ -1,0 +1,149 @@
+@import url(https://fonts.google.com/specimen/Bebas+Neue);
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgb(35,88,31);
+background: linear-gradient(90deg, rgba(35,88,31,0.41642594537815125) 0%, rgba(135,33,33,0.413624824929972) 50%, rgba(35,88,31,0.4052214635854342) 100%);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 15%;
+    background: rgb(35,88,31);
+    background: linear-gradient(90deg, rgba(35,88,31,0.41642594537815125) 0%, rgba(135,33,33,0.413624824929972) 50%, rgba(35,88,31,0.4052214635854342) 100%);
+}
+
+body {
+    width: 100%;
+    background: url("image/nezuko.jpeg") fixed no-repeat;
+    background-size: cover;
+}
+
+nav {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(128, 101, 37);
+}
+
+#github {
+    width: 45px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    flex-direction: column;
+    margin-top: 170px;
+    background: rgb(35,88,31);
+    background: linear-gradient(90deg, rgba(35,88,31,0.41642594537815125) 0%, rgba(135,33,33,0.413624824929972) 50%, rgba(35,88,31,0.4052214635854342) 100%);
+    border-radius: 15px;
+}
+
+.formulaire {
+    margin-top: 50px;
+}
+
+#texte_profil {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+#tableau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+    margin-left: 360px;
+    flex-direction: column;
+    margin-top: 140px;
+    border-radius: 15px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 30%;
+    border-style: none;
+    height: 25px;
+}
+
+input:hover {
+    background: rgb(235,160,44);
+    background: linear-gradient(90deg, rgba(235,160,44,0.9150253851540616) 0%, rgba(255,255,255,0.9094231442577031) 100%);
+}
+
+#input_profil {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.modifier {
+    margin-bottom: 30px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    opacity: 80%;
+}
+
+button:hover {
+    background: rgb(235,160,44);
+    background: linear-gradient(90deg, rgba(235,160,44,0.9150253851540616) 0%, rgba(255,255,255,0.9094231442577031) 100%);
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 120%;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    padding-right: 45px;

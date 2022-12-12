@@ -3,13 +3,22 @@
 include('serveur.php');
 
 echo "<br>";
+?>
 
-if (isset($_SESSION['login']))
-{ echo "Connecté(e) en tant que " . $_SESSION['login']; }
+<div class="message_acc">
+  <?php
+    if (isset($_SESSION['login']))
+    { echo "<h3>Pourfendeur " . $_SESSION['login'] . "," ."<br>" . " transmet un message à ton corbeau messager" ."</h3>" ; } 
+    ?>
 
-else
+
+<?php
+if (!isset($_SESSION['login']))
 { echo "Veuillez vous connecter pour pouvoir écrire un commentaire."; }
+?>
+</div>
 
+<?php
 echo "<br>";
 
 if(isset($_POST['submit'])){
@@ -45,47 +54,33 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Feuille de style css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style_commentaire.css">
     <title>Livre d'or</title>
 </head>
 
 <body>
     
-<?php if(isset($_SESSION['login'])){ ?>
+<?php if(isset($_SESSION['login'])) ?>
 <form action="" method="POST">
+
     <fieldset>
-        
-       
-        <label for="comment">Commentaires</label>
+        <label for="comment"><p>Message</p></label>
         <br>
         <br>
         <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
         <br>
         <br>
-        <input type="submit" name="submit" value="poster">
+        <input type="submit" name="submit" value="transmettre">
         <br>
         <br>
         
-        <?= @$mess_error ?>
+
     </fieldset>
 </form>
-
-<?php } ?>
-
-<div class="container-comment">
     
-    <?php 
-        $query=mysqli_query($bdd,"SELECT commentaires.date,  utilisateurs.login, commentaires.commentaire FROM commentaires INNER JOIN utilisateurs ON commentaires.id_utilisateur=utilisateurs.id ORDER BY date DESC");
-        $rowcount=mysqli_num_rows($query);
-        $row=mysqli_fetch_all($query,MYSQLI_ASSOC);
+<footer>
+    <a href="https://github.com/nicolas-brement?tab=repositories"><img id="github" src="css/image/git.png"></a>
+</footer>
 
-        for($i=0;$i<$rowcount;$i++)
-        {
-           echo "<br> ".$row[$i]['login']." ".$row[$i]['commentaire']." ".$row[$i]['date'];
-             
-        }
-    ?>
-</div>
-    
 </body>
 </html>

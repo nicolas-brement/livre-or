@@ -14,8 +14,8 @@ header{
     height: 70px;
     width: 100%;
     margin-bottom: 10px;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+    background: rgb(91,191,227);
+    background: linear-gradient(90deg, rgba(91,191,227,0.4584427521008403) 0%, rgba(255,255,255,0.444437149859944) 50%);
 }
 
 footer {
@@ -24,13 +24,13 @@ footer {
     height: 50px;
     width: 100%;
     margin-top: 15%;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.5186668417366946) 0%, rgba(255,255,255,0.5102634803921569) 50%, rgba(251,252,69,0.5102634803921569) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.4584427521008403) 0%, rgba(91,191,227,0.46124387254901966) 50%);
 }
 
 body {
     width: 100%;
-    background: url("image/zenitsu.jpeg") fixed no-repeat;
+    background: url("image/corbeau.png") fixed no-repeat;
     background-size: cover;
 }
 
@@ -53,7 +53,7 @@ li {
 
 a {
     text-decoration: none;
-    color: rgb(55 37 128);
+    color: black;
 }
 
 #github {
@@ -64,6 +64,12 @@ a {
     margin-top: 10px;
 }
 
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
 form {
     display: flex;
     align-items: center;
@@ -72,9 +78,7 @@ form {
     height: 30%;
     flex-direction: column;
     margin-left: 35%;
-    margin-top: 170px;
-    background: rgb(226,174,61);
-    background: linear-gradient(90deg, rgba(226,174,61,0.8086668417366946) 0%, rgba(255,255,255,0.8002634803921569) 50%, rgba(251,252,69,0.8002634803921569) 100%);
+    margin-top: 60px;
     border-radius: 15px;
 }
 
@@ -82,24 +86,48 @@ input {
     display: flex;
     justify-content: center;
     border-radius: 5px;
-    margin-bottom: 10px;
-    width: 30%;
+    margin-bottom: 5px;
+    width: 50%;
     border-style: none;
     height: 25px;
+    margin-left: 25%;
 }
 
 
 input:hover {
-    background: rgb(231,182,58);
-    background: linear-gradient(90deg, rgba(231,182,58,0.8800113795518207) 0%, rgba(255,255,255,1) 50%, rgba(231,182,58,1) 100%);
+    background: rgb(218,72,145);
+    background: linear-gradient(90deg, rgba(218,72,145,1) 12%, rgba(255,255,255,1) 62%);
 }
 
-.message_connexion {
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    color: black;
+}
+
+label {
     display: flex;
     justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    margin-top: 60px;
-    font-size: larger;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 75%;
 }
 
+fieldset, input {
+    display: flex;
+    justify-content: center;
+}
+
+.message_acc {
+    display: flex;
+    justify-content: center;
+    background: white;
+    opacity: 75%;
+}
+
+textarea {
+    border-radius: 8px;
+}
