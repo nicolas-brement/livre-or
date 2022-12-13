@@ -31,7 +31,6 @@ include('serveur.php');
     <h3>LIVRE D'OR</h3>
 
    <!-- <div class="livre_or"> -->
-
         <?php
         foreach ($row as $row){
             echo "<table>";

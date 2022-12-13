@@ -20,6 +20,10 @@ if(isset($_POST['envoi'])){
     if ($password != $_POST['password']){
         echo "Le login ou le mot de passe est incorrect";
     }
+
+    if($login == 'admin') {
+        header('Location: admin.php');
+    }
 }
 
 ?>

@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 
    
     $session=$_SESSION['login'];
-    $comment=$_POST['commentaire'];
+    $comment=mysqli_real_escape_string($bdd,$_POST['commentaire']);
     $mess_error="";
     $date=date('Y/m/d H:i:s');
 
@@ -42,6 +42,7 @@ if(isset($_POST['submit'])){
         
     }
 }
+
 
 ?>
 

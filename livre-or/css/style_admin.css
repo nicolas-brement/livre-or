@@ -1,0 +1,128 @@
+@import url(https://fonts.google.com/specimen/Bebas+Neue);
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgb(110,188,208);
+    background: linear-gradient(90deg, rgba(110,188,208,0.6447172619047619) 0%, rgba(255,255,255,0.6083026960784313) 50%, rgba(199,199,182,0.594297093837535) 100%);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 8%;
+    background: rgb(110,188,208);
+    background: linear-gradient(90deg, rgba(110,188,208,0.6447172619047619) 0%, rgba(255,255,255,0.6083026960784313) 50%, rgba(199,199,182,0.594297093837535) 100%);
+}
+
+body {
+    width: 100%;
+    background: url("image/giyu.jpeg") fixed no-repeat;
+    background-size: cover;
+}
+
+nav {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(55 37 128);
+}
+
+#github {
+    width: 45px;
+}
+
+table, thead, tbody, th, td, tr {
+    display: block;
+    margin-top: 5px;
+    overflow: auto;
+}
+
+thead {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+}
+
+input {
+    max-width: 100%;
+}
+
+td:before {
+
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-family: 'Karla', sans-serif;
+}
+td:nth-of-type(1):before { content: "Nom"; }
+td:nth-of-type(2):before { content: "Prenom"; }
+td:nth-of-type(3):before { content: "Login"; }
+td:nth-of-type(4):before { content: "Mot de passe"; }
+
+tbody tr {
+    background-color: rgba(82, 133, 210, 0.711);
+    border-radius: 10px;
+}
+
+tbody td {
+    border: none;
+}
+
+tbody {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#tableau {
+    flex-direction: column;
+ 
+    width: 30%;
+    border-radius: 10px;
+}
